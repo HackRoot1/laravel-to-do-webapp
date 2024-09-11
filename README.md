@@ -1,66 +1,107 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# To-Do App (Laravel)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Overview
 
-## About Laravel
+The To-Do App (Laravel) is a simple web-based application developed using PHP Laravel Framework, MySQL, HTML, CSS, and JavaScript, jQuery and Ajax. It helps users manage their tasks and stay organized by providing features such as task creation, updating, deletion, deadline setting, and task prioritization. This app is suitable for personal use or team collaboration, providing an efficient way to track tasks and increase productivity.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Features
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Task Management:** Allows users to create, update, and delete tasks easily.
+- **Deadline Setting:** Enables users to set deadlines for tasks to prioritize and manage time effectively.
+- **Task Prioritization:** Provides options to prioritize tasks based on importance or urgency.
+- **Task Categories:** Allows users to categorize tasks into different categories or projects for better organization.
+- **Task Status:** Provides status indicators to track the progress of tasks, such as "Completed," "Incompleted," and "Pending."
+- **User Authentication:** Supports user authentication to ensure data privacy and security.
+- **Responsive Design:** Adapts to different screen sizes for seamless usage on various devices.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Technologies Used
 
-## Learning Laravel
+- **PHP (Laravel):** A powerful backend framework based on PHP for building web applications with an expressive and elegant syntax, supporting MVC architecture and offering features like routing, authentication, and database management.
+- **MySQL:** A widely-used relational database management system (RDBMS) for efficient data storage, retrieval, and management, providing a robust environment for structured data handling.
+- **HTML/CSS:** Standard frontend languages; HTML defines the structure of the web app while CSS provides the design and layout, ensuring the app is visually appealing and responsive across different devices.
+- **JavaScript:** A versatile frontend scripting language used to create dynamic and interactive elements, enabling features like form validation, animations, and real-time updates in the application interface.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Usage
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Follow these steps to set up and run the To-Do App (Laravel) locally:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+1. **Clone the Repository:**
+   - Clone the repository to your local machine using the following command:
+     ```
+     https://github.com/HackRoot1/laravel-to-do-webapp.git
+     ```
 
-## Laravel Sponsors
+2. **Install Dependencies:**
+   - Navigate to the project directory and install the required dependencies using Composer:
+     ```
+     cd laravel-to-do-webapp
+     composer install
+     ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+3. **Set Up Environment Variables:**
+   - Copy the `.env.example` file to create your `.env` file:
+     ```
+     cp .env.example .env
+     ```
+   - Open the `.env` file and update the database connection details (DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD) according to your MySQL configuration.
 
-### Premium Partners
+4. **Generate Application Key:**
+   - Generate the Laravel application key, which is used for encryption and session management:
+     ```
+     php artisan key:generate
+     ```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+5. **Run Database Migrations:**
+   - Run the following command to set up the database tables:
+     ```
+     php artisan migrate
+     ```
+
+6. **Seed the Database (Optional):**
+   - You can seed the database with initial data using:
+     ```
+     php artisan db:seed
+     ```
+
+7. **Start a Local Development Server:**
+   - Use the Laravel built-in server to run the application:
+     ```
+     php artisan serve
+     ```
+
+8. **Access the App:**
+   - Open a web browser and navigate to `http://localhost:8000` to access the To-Do App (Laravel).
+  
+
+## Project Structure
+
+- **index.php:** The main entry point of the application.
+- **config.php:** Configuration file for database connection and other settings.
+- **/assets:** Directory for storing CSS stylesheets, JavaScript, images files.
+- **/includes:** Directory for PHP include files containing reusable code and functions.
+- **/uploads:** Directory for uploading and storing files or documents related to tasks.
+
+## Demo Screenshots
+
+![Login Page](demo/login.png)
+*Login Page: User Login Page*
+
+![Registration Page](demo/registration.png)
+*Registration Page: User can register*
+
+![Dashboard](demo/dashboard.png)
+*User Dashboard: View and Manage upcomming Tasks*
+
+![add tasks](demo/add_tasks.png)
+*Add Tasks: Add new Tasks*
+
+![View Tasks](demo/view_tasks.png)
+*View Tasks: View and manage all tasks*
+
+![profile](demo/profile.png)
+*Profile Page: View and manage Profile Settings*
+
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+If you'd like to contribute to the project, feel free to fork the repository, make changes, and submit a pull request. Your feedback, suggestions, and contributions are highly appreciated and will help improve the app further.
