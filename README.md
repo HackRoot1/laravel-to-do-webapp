@@ -83,22 +83,22 @@ Follow these steps to set up and run the To-Do App (Laravel) locally:
 
 ## Demo Screenshots
 
-![Login Page](demo/login.png)
+![Login Page](./resources/images/login.png)
 *Login Page: User Login Page*
 
-![Registration Page](demo/registration.png)
+![Registration Page](./resources/images/registration.png)
 *Registration Page: User can register*
 
-![Dashboard](demo/dashboard.png)
+![Dashboard](./resources/images/dashboard.png)
 *User Dashboard: View and Manage upcomming Tasks*
 
-![add tasks](demo/add_tasks.png)
+![add tasks](./resources/images/add_tasks.png)
 *Add Tasks: Add new Tasks*
 
-![View Tasks](demo/view_tasks.png)
+![View Tasks](./resources/images/view_tasks.png)
 *View Tasks: View and manage all tasks*
 
-![profile](demo/profile.png)
+![profile](./resources/images/profile.png)
 *Profile Page: View and manage Profile Settings*
 
 
